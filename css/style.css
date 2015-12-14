@@ -1,0 +1,101 @@
+#board {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  font-size: 50px;
+}
+
+.x {
+  background: url("http://www.clker.com/cliparts/c/i/R/i/U/Y/letter-x-hi.png");
+  background-size: cover;
+}
+.o {
+  background: url("http://www.clker.com/cliparts/y/5/v/j/5/p/uppercase-o-hi.png");
+  background-size: cover;
+}
+#reload {
+  text-align: center;
+  margin-top: 40px;
+}
+#refresh {
+  padding: 10px;
+  font-size: 26px;
+  background-color: red;
+  /*background: linear-gradient(red, white);*/
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 100px;
+}
+
+#div1 {
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#div2 {
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+
+#div3 {
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+
+#div4 {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#div5 {
+  border: 3px solid black;
+}
+
+#div6 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+
+#div7 {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}
+
+#div8 {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+#div9 {
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+}
+
+header {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background: radial-gradient(circle, black 40%, transparent 100%), white;
+  border-radius: 500px;
+  border-bottom: 3px solid white;
+  color: white;
+  margin-top: -10px;
+}
+
+header h1 {
+  font-weight: bold;
+  text-size: 30px;
+}
+
+body {
+  background-image: url("http://tse2.mm.bing.net/th?id=OIP.Ma5c9f5042c2939243d04a9d12f0d20c8H0&pid=15.1");
+  background-size: cover;
+}
+
