@@ -9,75 +9,75 @@ $(function(){
   function getWinner() {
   //cond1 x
   if (board[0][0] === 'x' && board[0][1] === 'x' && board[0][2] === 'x') {
-    alert('X Wins! O Loses!');
+    return alert('X Wins! O Loses!');
   }
   //cond2 x
   if (board[1][0] === 'x' && board[1][1] === 'x' && board[1][2] === 'x') {
-    alert('X Wins! O Loses!');
+    return alert('X Wins! O Loses!');
   }
   //cond3 x
   if (board[2][0] === 'x' && board[2][1] === 'x' && board[2][2] === 'x') {
-    alert('X Wins! O Loses!');
+    return alert('X Wins! O Loses!');
   }
   //cond4 x
   if (board[0][0] === 'x' && board[1][1] === 'x' && board[2][2] === 'x') {
-    alert('X Wins! O Loses!');
+    return alert('X Wins! O Loses!');
   }
   //cond5 x
   if (board[2][0] === 'x' && board[1][1] === 'x' && board[0][2] === 'x') {
-    alert('X Wins! O Loses!');
+    return alert('X Wins! O Loses!');
   }
   //cond6 x
   if (board[0][2] === 'x' && board[1][2] === 'x' && board[2][2] === 'x') {
-    alert('X Wins! O Loses!');
+    return alert('X Wins! O Loses!');
   }
   //cond7 x
   if (board[0][1] === 'x' && board[1][1] === 'x' && board[2][1] === 'x') {
-    alert('X Wins! O Loses!');
+    return alert('X Wins! O Loses!');
+  }
+  //cond8 x
+  if (board[0][0] === 'x' && board[1][0] === 'x' && board[2][0] === 'x') {
+    return alert('X Wins! O Loses!');
   }
 
-//cond8 x
-  if (board[0][0] === 'x' && board[1][0] === 'x' && board[2][0] === 'x') {
-    alert('X Wins! O Loses!');
-  }
   //cond1 o
   if (board[0][0] === 'o' && board[0][1] === 'o' && board[0][2] === 'o') {
-    alert('O Wins! X Loses!');
+    return alert('O Wins! X Loses!');
   }
   //cond2 o
   if (board[1][0] === 'o' && board[1][1] === 'o' && board[1][2] === 'o') {
-    alert('O Wins! X Loses!');
+    return alert('O Wins! X Loses!');
   }
   //cond3 o
   if (board[2][0] === 'o' && board[2][1] === 'o' && board[2][2] === 'o') {
-    alert('O Wins! X Loses!');
+    return alert('O Wins! X Loses!');
   }
   //cond4 o
   if (board[0][0] === 'o' && board[1][1] === 'o' && board[2][2] === 'o') {
-    alert('O Wins! X Loses!');
+    return alert('O Wins! X Loses!');
   }
   //cond5 o
   if (board[2][0] === 'o' && board[1][1] === 'o' && board[0][2] === 'o') {
-    alert('O Wins! X Loses!');
+    return alert('O Wins! X Loses!');
   }
   //cond6 o
   if (board[0][2] === 'o' && board[1][2] === 'o' && board[2][2] === 'o') {
-    alert('O Wins! X Loses!');
+    return alert('O Wins! X Loses!');
   }
   //cond7 o
   if (board[0][1] === 'o' && board[1][1] === 'o' && board[2][1] === 'o') {
-    alert('O Wins! X Loses!');
+    return alert('O Wins! X Loses!');
   }
-
-//cond8 o
+  //cond8 o
   if (board[0][0] === 'o' && board[1][0] === 'o' && board[2][0] === 'o') {
-    alert('O Wins! X Loses!');
+    return alert('O Wins! X Loses!');
+  }
+  if (i === 8) {
+    return alert('The Game is a Tie!');
   }
 }
 
   $('.box').on('click', function() {
-    // while (i < 99999) {
-    //THIS MIGHT BE THE SPOT TO RUN THE ILLEGAL MOVE FUNCTION
     if (($(this).attr('class')) != 'box') {
     alert('This square has been played already! Play a different square!');
   }
@@ -149,9 +149,17 @@ $(function(){
         return i++;
       }
     }
-  });
+});
 
   $('#refresh').on('click', function() {
       location.reload(true);
+  });
+
+  $('#playComputer').on('click', function () {
+      window.location.replace("playComputer.html");
+  });
+
+  $('#twoPlayer').on('click', function () {
+      window.location.replace("index.html");
   });
 });

@@ -22,14 +22,15 @@
   text-align: center;
   margin-top: 40px;
 }
-#refresh {
+button {
   padding: 10px;
   font-size: 26px;
   background-color: red;
-  /*background: linear-gradient(red, white);*/
   font-family: 'Montserrat', sans-serif;
   border-radius: 100px;
 }
+
+
 
 #div1 {
   border-right: 3px solid black;
