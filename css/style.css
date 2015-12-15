@@ -3,13 +3,63 @@
   justify-content: center;
   margin-top: 20px;
 }
-
+#reload {
+  text-align: center;
+  margin-top: 40px;
+}
 .box {
   height: 150px;
   width: 150px;
   font-size: 50px;
 }
-
+#div1 {
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+#div2 {
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+#div3 {
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+#div4 {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+#div5 {
+  border: 3px solid black;
+}
+#div6 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+#div7 {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}
+#div8 {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+#div9 {
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+}
+#oScore {
+  text-align: center;
+}
+#xScore {
+  text-align: center;
+}
+#tieScore {
+  text-align: center;
+}
 .x {
   background: url("http://www.clker.com/cliparts/c/i/R/i/U/Y/letter-x-hi.png");
   background-size: cover;
@@ -18,10 +68,7 @@
   background: url("http://www.clker.com/cliparts/y/5/v/j/5/p/uppercase-o-hi.png");
   background-size: cover;
 }
-#reload {
-  text-align: center;
-  margin-top: 40px;
-}
+
 button {
   padding: 10px;
   font-size: 26px;
@@ -29,57 +76,6 @@ button {
   font-family: 'Montserrat', sans-serif;
   border-radius: 100px;
 }
-
-
-
-#div1 {
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-}
-
-#div2 {
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-  border-left: 3px solid black;
-}
-
-#div3 {
-  border-bottom: 3px solid black;
-  border-left: 3px solid black;
-}
-
-#div4 {
-  border-top: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-}
-
-#div5 {
-  border: 3px solid black;
-}
-
-#div6 {
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  border-left: 3px solid black;
-}
-
-#div7 {
-  border-top: 3px solid black;
-  border-right: 3px solid black;
-}
-
-#div8 {
-  border-top: 3px solid black;
-  border-right: 3px solid black;
-  border-left: 3px solid black;
-}
-
-#div9 {
-  border-top: 3px solid black;
-  border-left: 3px solid black;
-}
-
 header {
   text-align: center;
   font-family: 'Montserrat', sans-serif;

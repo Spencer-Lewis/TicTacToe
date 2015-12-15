@@ -1,17 +1,21 @@
+//Array containting data for location of x's and o's
 var board = [[null, null, null],
              [null, null, null],
              [null, null, null]];
 
+//On load function with script inside
 $(function(){
-  var i = 0;
+  var i = 1;
   var xCounter = 0;
   var oCounter = 0;
   var tieCounter = 0;
 
+  //Updates scores to 0 at the beginning
   $('#xScore').html(xCounter);
   $('#oScore').html(oCounter);
   $('#tieScore').html(tieCounter);
 
+  //checks all win conditions, alerts winner, tallies score.
   function getWinner() {
   //cond1 x
   if (board[0][0] === 'x' && board[0][1] === 'x' && board[0][2] === 'x') {
@@ -126,7 +130,8 @@ $(function(){
     reset();
     return $('#oScore').html(oCounter);
   }
-  if (i === 8) {
+  //tie condition
+  if (i === 9) {
     alert('The Game is a Tie!');
     tieCounter++;
     reset();
@@ -134,6 +139,8 @@ $(function(){
   }
 }
 
+  //click the box, make sure it is empty, and if so place corresponding X or O
+  //in the DOM and also the correct spot in the data array.
   $('.box').on('click', function() {
     if (($(this).attr('class')) != 'box') {
     alert('This square has been played already! Play a different square!');
@@ -207,6 +214,7 @@ $(function(){
       }
     }
 });
+
   //function to reset on win
   function reset() {
     //reset box 1
@@ -272,6 +280,8 @@ $(function(){
         if (($('#div9').attr('class')) === 'box x') {
             $('#div9').toggleClass('x');
         }
+        //reset h2
+        $('h2').html('O goes First');
         //reset the counter
         i = 0;
         //reset array values
@@ -347,8 +357,10 @@ $(function(){
         if (($('#div9').attr('class')) === 'box x') {
             $('#div9').toggleClass('x');
         }
+        //reset h2
+        $('h2').html('O goes First');
         //reset the counter
-        i = 0;
+        i = 1;
         //reset array values
         board = [
             [null, null, null],
@@ -361,7 +373,4 @@ $(function(){
       window.location.replace("playComputer.html");
   });
 
-  $('#twoPlayer').on('click', function () {
-      window.location.replace("index.html");
-  });
 });

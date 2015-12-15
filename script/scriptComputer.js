@@ -1,17 +1,21 @@
+//Array containing data for location of x's and o's
 var board = [[null, null, null],
              [null, null, null],
              [null, null, null]];
 
+//On load function with script
 $(function(){
   var i = 0;
   var xCounter = 0;
   var oCounter = 0;
   var tieCounter = 0;
 
+  //Updates scores to 0 at the beginning
   $('#xScore').html(xCounter);
   $('#oScore').html(oCounter);
   $('#tieScore').html(tieCounter);
 
+  //checks all win conditions, alerts winner, tallies score.
   function getWinner() {
   //cond1 x
   if (board[0][0] === 'x' && board[0][1] === 'x' && board[0][2] === 'x') {
@@ -143,6 +147,7 @@ $(function(){
   }
 }
 
+    //place player x. check winner. place computer o. check winner.
     $('.box').on('click', function() {
         if (($(this).attr('class')) != 'box') {
             alert('This square has been played already! Play a different square!');
@@ -211,6 +216,7 @@ $(function(){
         }
     });
 
+    //ensures computer only adds o's to empty (available) boxes
     function toggleComputerClass() {
         computerDiv();
         if (ranDiv === "div1") {
@@ -288,6 +294,8 @@ $(function(){
 
     }
 
+    //Logic for computer to choose a space. It tries to block all rows of 2.
+    //Otherwise random
     function computerDiv() {
         //computer will attempt to block every move you make
         //H1
