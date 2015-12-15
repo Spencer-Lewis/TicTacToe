@@ -16,87 +16,130 @@ $(function(){
   //cond1 x
   if (board[0][0] === 'x' && board[0][1] === 'x' && board[0][2] === 'x') {
     alert('X Wins! O Loses!');
-    return xCounter++;
+    xCounter++;
+    reset();
+    $('#xScore').html(xCounter);
+    return true;
   }
   //cond2 x
   if (board[1][0] === 'x' && board[1][1] === 'x' && board[1][2] === 'x') {
     alert('X Wins! O Loses!');
-    return xCounter += 1;
+    xCounter++;
+    reset();
+    $('#xScore').html(xCounter);
+    return true;
   }
   //cond3 x
   if (board[2][0] === 'x' && board[2][1] === 'x' && board[2][2] === 'x') {
     alert('X Wins! O Loses!');
-    return xCounter += 1;
+    xCounter++;
+    reset();
+    $('#xScore').html(xCounter);
+    return true;
   }
   //cond4 x
   if (board[0][0] === 'x' && board[1][1] === 'x' && board[2][2] === 'x') {
     alert('X Wins! O Loses!');
-    return xCounter += 1;
+    xCounter++;
+    reset();
+    $('#xScore').html(xCounter);
+    return true;
   }
   //cond5 x
   if (board[2][0] === 'x' && board[1][1] === 'x' && board[0][2] === 'x') {
     alert('X Wins! O Loses!');
-    return xCounter += 1;
+    xCounter++;
+    reset();
+    $('#xScore').html(xCounter);
+    return true;
   }
   //cond6 x
   if (board[0][2] === 'x' && board[1][2] === 'x' && board[2][2] === 'x') {
     alert('X Wins! O Loses!');
-    return xCounter += 1;
+    xCounter++;
+    reset();
+    $('#xScore').html(xCounter);
+    return true;
   }
   //cond7 x
   if (board[0][1] === 'x' && board[1][1] === 'x' && board[2][1] === 'x') {
     alert('X Wins! O Loses!');
-    return xCounter += 1;
+    xCounter++;
+    reset();
+    $('#xScore').html(xCounter);
+    return true;
   }
   //cond8 x
   if (board[0][0] === 'x' && board[1][0] === 'x' && board[2][0] === 'x') {
     alert('X Wins! O Loses!');
-    return xCounter += 1;
+    xCounter++;
+    reset();
+    $('#xScore').html(xCounter);
+    return true;
   }
 
   //cond1 o
   if (board[0][0] === 'o' && board[0][1] === 'o' && board[0][2] === 'o') {
     alert('O Wins! X Loses!');
-    return oCounter++;
+    oCounter++;
+    reset();
+    return ('#oScore').html(oCounter);
   }
   //cond2 o
   if (board[1][0] === 'o' && board[1][1] === 'o' && board[1][2] === 'o') {
     alert('O Wins! X Loses!');
-    return oCounter++;
+    oCounter++;
+    reset();
+    return $('#oScore').html(oCounter);
   }
   //cond3 o
   if (board[2][0] === 'o' && board[2][1] === 'o' && board[2][2] === 'o') {
     alert('O Wins! X Loses!');
-    return oCounter++;
+    oCounter++;
+    reset();
+    return $('#oScore').html(oCounter);
   }
   //cond4 o
   if (board[0][0] === 'o' && board[1][1] === 'o' && board[2][2] === 'o') {
     alert('O Wins! X Loses!');
-    return oCounter++;
+    oCounter++;
+    reset();
+    return $('#oScore').html(oCounter);
   }
   //cond5 o
   if (board[2][0] === 'o' && board[1][1] === 'o' && board[0][2] === 'o') {
     alert('O Wins! X Loses!');
-    return oCounter++;
+    oCounter++;
+    reset();
+    return $('#oScore').html(oCounter);
   }
   //cond6 o
   if (board[0][2] === 'o' && board[1][2] === 'o' && board[2][2] === 'o') {
     alert('O Wins! X Loses!');
-    return oCounter++;
+    oCounter++;
+    reset();
+    return $('#oScore').html(oCounter);
   }
   //cond7 o
   if (board[0][1] === 'o' && board[1][1] === 'o' && board[2][1] === 'o') {
     alert('O Wins! X Loses!');
-    return oCounter++;
+    oCounter++;
+    reset();
+    return $('#oScore').html(oCounter);
   }
   //cond8 o
   if (board[0][0] === 'o' && board[1][0] === 'o' && board[2][0] === 'o') {
     alert('O Wins! X Loses!');
-    return oCounter++;
+    oCounter++;
+    reset();
+    return $('#oScore').html(oCounter);
   }
   if (i === 9) {
     alert('The Game is a Tie!');
-    return tieCounter++;
+    tieCounter++;
+    reset();
+    $('#tieScore').html(tieCounter);
+    return true;
   }
 }
 
@@ -173,49 +216,56 @@ $(function(){
         if (ranDiv === "div1") {
             if (($('#div1').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div1').toggleClass('o');
             }
         }
         if (ranDiv === "div2") {
             if (($('#div2').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div2').toggleClass('o');
             }
         }
         if (ranDiv === "div3") {
             if (($('#div3').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div3').toggleClass('o');
             }
         }
         if (ranDiv === "div4") {
             if (($('#div4').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div4').toggleClass('o');
             }
         }
         if (ranDiv === "div5") {
             if (($('#div5').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div5').toggleClass('o');
             }
         }
         if (ranDiv === "div6") {
             if (($('#div6').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div6').toggleClass('o');
             }
         }
         if (ranDiv === "div7") {
             if (($('#div7').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div7').toggleClass('o');
             }
         }
@@ -230,7 +280,8 @@ $(function(){
         if (ranDiv === "div9") {
             if (($('#div9').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div9').toggleClass('o');
             }
         }
@@ -342,11 +393,84 @@ $(function(){
         return ranDiv = "div" + Math.floor((Math.random() * 9) + 1);
         }
     };
-    //refresh button (THIS IS A COMMENT)
-    // $('#refresh').on('click', function() {
-    //     location.reload(true);
-    // });
 
+  //function to reset on win
+  function reset() {
+    //reset box 1
+        if (($('#div1').attr('class')) === 'box o') {
+            $('#div1').toggleClass('o');
+        }
+        if (($('#div1').attr('class')) === 'box x') {
+            $('#div1').toggleClass('x');
+        }
+        //reset box 2
+        if (($('#div2').attr('class')) === 'box o') {
+            $('#div2').toggleClass('o');
+        }
+        if (($('#div2').attr('class')) === 'box x') {
+            $('#div2').toggleClass('x');
+        }
+        //reset box 3
+        if (($('#div3').attr('class')) === 'box o') {
+            $('#div3').toggleClass('o');
+        }
+        if (($('#div3').attr('class')) === 'box x') {
+            $('#div3').toggleClass('x');
+        }
+        //reset box 4
+        if (($('#div4').attr('class')) === 'box o') {
+            $('#div4').toggleClass('o');
+        }
+        if (($('#div4').attr('class')) === 'box x') {
+            $('#div4').toggleClass('x');
+        }
+        //reset box 5
+        if (($('#div5').attr('class')) === 'box o') {
+            $('#div5').toggleClass('o');
+        }
+        if (($('#div5').attr('class')) === 'box x') {
+            $('#div5').toggleClass('x');
+        }
+        //reset box 6
+        if (($('#div6').attr('class')) === 'box o') {
+            $('#div6').toggleClass('o');
+        }
+        if (($('#div6').attr('class')) === 'box x') {
+            $('#div6').toggleClass('x');
+        }
+        //reset box 7
+        if (($('#div7').attr('class')) === 'box o') {
+            $('#div7').toggleClass('o');
+        }
+        if (($('#div7').attr('class')) === 'box x') {
+            $('#div7').toggleClass('x');
+        }
+        //reset box 8
+        if (($('#div8').attr('class')) === 'box o') {
+            $('#div8').toggleClass('o');
+        }
+        if (($('#div8').attr('class')) === 'box x') {
+            $('#div8').toggleClass('x');
+        }
+        //reset box 9
+        if (($('#div9').attr('class')) === 'box o') {
+            $('#div9').toggleClass('o');
+        }
+        if (($('#div9').attr('class')) === 'box x') {
+            $('#div9').toggleClass('x');
+        }
+        //reset the counter
+        i = 0;
+        //reset array values
+        board = [
+            [null, null, null],
+            [null, null, null],
+            [null, null, null]
+          ];
+  }
+
+
+    //reset button
     $('#refresh').on('click', function () {
         //reset box 1
         if (($('#div1').attr('class')) === 'box o') {
