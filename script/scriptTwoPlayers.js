@@ -4,76 +4,99 @@ var board = [[null, null, null],
 
 $(function(){
   var i = 0;
+  var xCounter = 0;
+  var oCounter = 0;
+  var tieCounter = 0;
 
+  $('#xScore').html(xCounter);
+  $('#oScore').html(oCounter);
+  $('#tieScore').html(tieCounter);
 
   function getWinner() {
   //cond1 x
   if (board[0][0] === 'x' && board[0][1] === 'x' && board[0][2] === 'x') {
-    return alert('X Wins! O Loses!');
+    alert('X Wins! O Loses!');
+    return xCounter++;
   }
   //cond2 x
   if (board[1][0] === 'x' && board[1][1] === 'x' && board[1][2] === 'x') {
-    return alert('X Wins! O Loses!');
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
   }
   //cond3 x
   if (board[2][0] === 'x' && board[2][1] === 'x' && board[2][2] === 'x') {
-    return alert('X Wins! O Loses!');
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
   }
   //cond4 x
   if (board[0][0] === 'x' && board[1][1] === 'x' && board[2][2] === 'x') {
-    return alert('X Wins! O Loses!');
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
   }
   //cond5 x
   if (board[2][0] === 'x' && board[1][1] === 'x' && board[0][2] === 'x') {
-    return alert('X Wins! O Loses!');
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
   }
   //cond6 x
   if (board[0][2] === 'x' && board[1][2] === 'x' && board[2][2] === 'x') {
-    return alert('X Wins! O Loses!');
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
   }
   //cond7 x
   if (board[0][1] === 'x' && board[1][1] === 'x' && board[2][1] === 'x') {
-    return alert('X Wins! O Loses!');
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
   }
   //cond8 x
   if (board[0][0] === 'x' && board[1][0] === 'x' && board[2][0] === 'x') {
-    return alert('X Wins! O Loses!');
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
   }
 
   //cond1 o
   if (board[0][0] === 'o' && board[0][1] === 'o' && board[0][2] === 'o') {
-    return alert('O Wins! X Loses!');
+    alert('O Wins! X Loses!');
+    return oCounter++;
   }
   //cond2 o
   if (board[1][0] === 'o' && board[1][1] === 'o' && board[1][2] === 'o') {
-    return alert('O Wins! X Loses!');
+    alert('O Wins! X Loses!');
+    return oCounter++;
   }
   //cond3 o
   if (board[2][0] === 'o' && board[2][1] === 'o' && board[2][2] === 'o') {
-    return alert('O Wins! X Loses!');
+    alert('O Wins! X Loses!');
+    return oCounter++;
   }
   //cond4 o
   if (board[0][0] === 'o' && board[1][1] === 'o' && board[2][2] === 'o') {
-    return alert('O Wins! X Loses!');
+    alert('O Wins! X Loses!');
+    return oCounter++;
   }
   //cond5 o
   if (board[2][0] === 'o' && board[1][1] === 'o' && board[0][2] === 'o') {
-    return alert('O Wins! X Loses!');
+    alert('O Wins! X Loses!');
+    return oCounter++;
   }
   //cond6 o
   if (board[0][2] === 'o' && board[1][2] === 'o' && board[2][2] === 'o') {
-    return alert('O Wins! X Loses!');
+    alert('O Wins! X Loses!');
+    return oCounter++;
   }
   //cond7 o
   if (board[0][1] === 'o' && board[1][1] === 'o' && board[2][1] === 'o') {
-    return alert('O Wins! X Loses!');
+    alert('O Wins! X Loses!');
+    return oCounter++;
   }
   //cond8 o
   if (board[0][0] === 'o' && board[1][0] === 'o' && board[2][0] === 'o') {
-    return alert('O Wins! X Loses!');
+    alert('O Wins! X Loses!');
+    return oCounter++;
   }
   if (i === 8) {
-    return alert('The Game is a Tie!');
+    alert('The Game is a Tie!');
+    return tieCounter++;
   }
 }
 
@@ -151,9 +174,83 @@ $(function(){
     }
 });
 
-  $('#refresh').on('click', function() {
-      location.reload(true);
-  });
+    $('#refresh').on('click', function () {
+        //reset box 1
+        if (($('#div1').attr('class')) === 'box o') {
+            $('#div1').toggleClass('o');
+        }
+        if (($('#div1').attr('class')) === 'box x') {
+            $('#div1').toggleClass('x');
+        }
+        //reset box 2
+        if (($('#div2').attr('class')) === 'box o') {
+            $('#div2').toggleClass('o');
+        }
+        if (($('#div2').attr('class')) === 'box x') {
+            $('#div2').toggleClass('x');
+        }
+        //reset box 3
+        if (($('#div3').attr('class')) === 'box o') {
+            $('#div3').toggleClass('o');
+        }
+        if (($('#div3').attr('class')) === 'box x') {
+            $('#div3').toggleClass('x');
+        }
+        //reset box 4
+        if (($('#div4').attr('class')) === 'box o') {
+            $('#div4').toggleClass('o');
+        }
+        if (($('#div4').attr('class')) === 'box x') {
+            $('#div4').toggleClass('x');
+        }
+        //reset box 5
+        if (($('#div5').attr('class')) === 'box o') {
+            $('#div5').toggleClass('o');
+        }
+        if (($('#div5').attr('class')) === 'box x') {
+            $('#div5').toggleClass('x');
+        }
+        //reset box 6
+        if (($('#div6').attr('class')) === 'box o') {
+            $('#div6').toggleClass('o');
+        }
+        if (($('#div6').attr('class')) === 'box x') {
+            $('#div6').toggleClass('x');
+        }
+        //reset box 7
+        if (($('#div7').attr('class')) === 'box o') {
+            $('#div7').toggleClass('o');
+        }
+        if (($('#div7').attr('class')) === 'box x') {
+            $('#div7').toggleClass('x');
+        }
+        //reset box 8
+        if (($('#div8').attr('class')) === 'box o') {
+            $('#div8').toggleClass('o');
+        }
+        if (($('#div8').attr('class')) === 'box x') {
+            $('#div8').toggleClass('x');
+        }
+        //reset box 9
+        if (($('#div9').attr('class')) === 'box o') {
+            $('#div9').toggleClass('o');
+        }
+        if (($('#div9').attr('class')) === 'box x') {
+            $('#div9').toggleClass('x');
+        }
+        //reset the counter
+        i = 0;
+        //reset array values
+        board = [
+            [null, null, null],
+            [null, null, null],
+            [null, null, null]
+            ];
+        //refresh win counters
+        $('#xScore').html(xCounter);
+        $('#oScore').html(oCounter);
+        $('#tieScore').html(tieCounter);
+});
 
   $('#playComputer').on('click', function () {
       window.location.replace("playComputer.html");

@@ -1,102 +1,104 @@
-var board = [
-    [null, null, null],
-    [null, null, null],
-    [null, null, null]
-];
+var board = [[null, null, null],
+             [null, null, null],
+             [null, null, null]];
 
-var ranDiv;
+$(function(){
+  var i = 0;
+  var xCounter = 0;
+  var oCounter = 0;
+  var tieCounter = 0;
 
+  $('#xScore').html(xCounter);
+  $('#oScore').html(oCounter);
+  $('#tieScore').html(tieCounter);
 
-$(function() {
-var i = 0;
+  function getWinner() {
+  //cond1 x
+  if (board[0][0] === 'x' && board[0][1] === 'x' && board[0][2] === 'x') {
+    alert('X Wins! O Loses!');
+    return xCounter++;
+  }
+  //cond2 x
+  if (board[1][0] === 'x' && board[1][1] === 'x' && board[1][2] === 'x') {
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
+  }
+  //cond3 x
+  if (board[2][0] === 'x' && board[2][1] === 'x' && board[2][2] === 'x') {
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
+  }
+  //cond4 x
+  if (board[0][0] === 'x' && board[1][1] === 'x' && board[2][2] === 'x') {
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
+  }
+  //cond5 x
+  if (board[2][0] === 'x' && board[1][1] === 'x' && board[0][2] === 'x') {
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
+  }
+  //cond6 x
+  if (board[0][2] === 'x' && board[1][2] === 'x' && board[2][2] === 'x') {
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
+  }
+  //cond7 x
+  if (board[0][1] === 'x' && board[1][1] === 'x' && board[2][1] === 'x') {
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
+  }
+  //cond8 x
+  if (board[0][0] === 'x' && board[1][0] === 'x' && board[2][0] === 'x') {
+    alert('X Wins! O Loses!');
+    return xCounter += 1;
+  }
 
-    function getWinner() {
-        //cond1 x
-        if (board[0][0] === 'x' && board[0][1] === 'x' && board[0][2] === 'x') {
-            alert('X Wins! O Loses!');
-            return true;
-        }
-        //cond2 x
-        if (board[1][0] === 'x' && board[1][1] === 'x' && board[1][2] === 'x') {
-            alert('X Wins! O Loses!');
-            return true;
-        }
-        //cond3 x
-        if (board[2][0] === 'x' && board[2][1] === 'x' && board[2][2] === 'x') {
-            alert('X Wins! O Loses!');
-            return true;
-        }
-        //cond4 x
-        if (board[0][0] === 'x' && board[1][1] === 'x' && board[2][2] === 'x') {
-            alert('X Wins! O Loses!');
-            return true;
-        }
-        //cond5 x
-        if (board[2][0] === 'x' && board[1][1] === 'x' && board[0][2] === 'x') {
-            alert('X Wins! O Loses!');
-            return true;
-        }
-        //cond6 x
-        if (board[0][2] === 'x' && board[1][2] === 'x' && board[2][2] === 'x') {
-            alert('X Wins! O Loses!');
-            return true;
-        }
-        //cond7 x
-        if (board[0][1] === 'x' && board[1][1] === 'x' && board[2][1] === 'x') {
-            alert('X Wins! O Loses!');
-            return true;
-        }
-        //cond8 x
-        if (board[0][0] === 'x' && board[1][0] === 'x' && board[2][0] === 'x') {
-            alert('X Wins! O Loses!');
-            return true;
-        }
-
-        //cond1 o
-        if (board[0][0] === 'o' && board[0][1] === 'o' && board[0][2] === 'o') {
-            alert('O Wins! X Loses!');
-            return true;
-        }
-        //cond2 o
-        if (board[1][0] === 'o' && board[1][1] === 'o' && board[1][2] === 'o') {
-            alert('O Wins! X Loses!');
-            return true;
-        }
-        //cond3 o
-        if (board[2][0] === 'o' && board[2][1] === 'o' && board[2][2] === 'o') {
-            alert('O Wins! X Loses!');
-            return true;
-        }
-        //cond4 o
-        if (board[0][0] === 'o' && board[1][1] === 'o' && board[2][2] === 'o') {
-            alert('O Wins! X Loses!');
-            return true;
-        }
-        //cond5 o
-        if (board[2][0] === 'o' && board[1][1] === 'o' && board[0][2] === 'o') {
-            alert('O Wins! X Loses!');
-            return true;
-        }
-        //cond6 o
-        if (board[0][2] === 'o' && board[1][2] === 'o' && board[2][2] === 'o') {
-            alert('O Wins! X Loses!');
-            return true;
-        }
-        //cond7 o
-        if (board[0][1] === 'o' && board[1][1] === 'o' && board[2][1] === 'o') {
-            alert('O Wins! X Loses!');
-            return true;
-        }
-
-        //cond8 o
-        if (board[0][0] === 'o' && board[1][0] === 'o' && board[2][0] === 'o') {
-            alert('O Wins! X Loses!');
-            return true;
-        }
-        if (i === 9) {
-          return alert('The Game is a Tie!');
-        }
-    }
+  //cond1 o
+  if (board[0][0] === 'o' && board[0][1] === 'o' && board[0][2] === 'o') {
+    alert('O Wins! X Loses!');
+    return oCounter++;
+  }
+  //cond2 o
+  if (board[1][0] === 'o' && board[1][1] === 'o' && board[1][2] === 'o') {
+    alert('O Wins! X Loses!');
+    return oCounter++;
+  }
+  //cond3 o
+  if (board[2][0] === 'o' && board[2][1] === 'o' && board[2][2] === 'o') {
+    alert('O Wins! X Loses!');
+    return oCounter++;
+  }
+  //cond4 o
+  if (board[0][0] === 'o' && board[1][1] === 'o' && board[2][2] === 'o') {
+    alert('O Wins! X Loses!');
+    return oCounter++;
+  }
+  //cond5 o
+  if (board[2][0] === 'o' && board[1][1] === 'o' && board[0][2] === 'o') {
+    alert('O Wins! X Loses!');
+    return oCounter++;
+  }
+  //cond6 o
+  if (board[0][2] === 'o' && board[1][2] === 'o' && board[2][2] === 'o') {
+    alert('O Wins! X Loses!');
+    return oCounter++;
+  }
+  //cond7 o
+  if (board[0][1] === 'o' && board[1][1] === 'o' && board[2][1] === 'o') {
+    alert('O Wins! X Loses!');
+    return oCounter++;
+  }
+  //cond8 o
+  if (board[0][0] === 'o' && board[1][0] === 'o' && board[2][0] === 'o') {
+    alert('O Wins! X Loses!');
+    return oCounter++;
+  }
+  if (i === 9) {
+    alert('The Game is a Tie!');
+    return tieCounter++;
+  }
+}
 
     $('.box').on('click', function() {
         if (($(this).attr('class')) != 'box') {
@@ -220,7 +222,8 @@ var i = 0;
         if (ranDiv === "div8") {
             if (($('#div8').attr('class')) != 'box') {
                 return toggleComputerClass();
-            } else {
+            }
+            else {
                 return $('#div8').toggleClass('o');
             }
         }
@@ -339,10 +342,88 @@ var i = 0;
         return ranDiv = "div" + Math.floor((Math.random() * 9) + 1);
         }
     };
+    //refresh button (THIS IS A COMMENT)
+    // $('#refresh').on('click', function() {
+    //     location.reload(true);
+    // });
 
-    $('#refresh').on('click', function() {
-        location.reload(true);
-    });
+    $('#refresh').on('click', function () {
+        //reset box 1
+        if (($('#div1').attr('class')) === 'box o') {
+            $('#div1').toggleClass('o');
+        }
+        if (($('#div1').attr('class')) === 'box x') {
+            $('#div1').toggleClass('x');
+        }
+        //reset box 2
+        if (($('#div2').attr('class')) === 'box o') {
+            $('#div2').toggleClass('o');
+        }
+        if (($('#div2').attr('class')) === 'box x') {
+            $('#div2').toggleClass('x');
+        }
+        //reset box 3
+        if (($('#div3').attr('class')) === 'box o') {
+            $('#div3').toggleClass('o');
+        }
+        if (($('#div3').attr('class')) === 'box x') {
+            $('#div3').toggleClass('x');
+        }
+        //reset box 4
+        if (($('#div4').attr('class')) === 'box o') {
+            $('#div4').toggleClass('o');
+        }
+        if (($('#div4').attr('class')) === 'box x') {
+            $('#div4').toggleClass('x');
+        }
+        //reset box 5
+        if (($('#div5').attr('class')) === 'box o') {
+            $('#div5').toggleClass('o');
+        }
+        if (($('#div5').attr('class')) === 'box x') {
+            $('#div5').toggleClass('x');
+        }
+        //reset box 6
+        if (($('#div6').attr('class')) === 'box o') {
+            $('#div6').toggleClass('o');
+        }
+        if (($('#div6').attr('class')) === 'box x') {
+            $('#div6').toggleClass('x');
+        }
+        //reset box 7
+        if (($('#div7').attr('class')) === 'box o') {
+            $('#div7').toggleClass('o');
+        }
+        if (($('#div7').attr('class')) === 'box x') {
+            $('#div7').toggleClass('x');
+        }
+        //reset box 8
+        if (($('#div8').attr('class')) === 'box o') {
+            $('#div8').toggleClass('o');
+        }
+        if (($('#div8').attr('class')) === 'box x') {
+            $('#div8').toggleClass('x');
+        }
+        //reset box 9
+        if (($('#div9').attr('class')) === 'box o') {
+            $('#div9').toggleClass('o');
+        }
+        if (($('#div9').attr('class')) === 'box x') {
+            $('#div9').toggleClass('x');
+        }
+        //reset the counter
+        i = 0;
+        //reset array values
+        board = [
+            [null, null, null],
+            [null, null, null],
+            [null, null, null]
+            ];
+
+        $('#xScore').html(xCounter);
+        $('#oScore').html(oCounter);
+        $('#tieScore').html(tieCounter);
+});
 
     $('#twoPlayer').on('click', function() {
         window.location.replace("index.html");

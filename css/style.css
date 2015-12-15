@@ -93,10 +93,26 @@ header {
 header h1 {
   font-weight: bold;
   text-size: 30px;
+  margin-top: 10px;
+  padding: 0;
 }
 
 body {
   background-image: url("http://tse2.mm.bing.net/th?id=OIP.Ma5c9f5042c2939243d04a9d12f0d20c8H0&pid=15.1");
   background-size: cover;
 }
-
+h2 {
+  margin: -15px 0 3px 0;
+  padding-bottom: 8px;
+}
+ul {
+  list-style-type: none;
+  margin-top: -10px;
+  padding: 0;
+}
+li {
+  display: inline-table;
+  text-align: justify;
+  margin: 0 40px 0 40px;
+  font-size: 20px;
+}
