@@ -19,7 +19,7 @@ $(function(){
   function getWinner() {
   //cond1 x
   if (board[0][0] === 'x' && board[0][1] === 'x' && board[0][2] === 'x') {
-    alert('X Wins! O Loses!');
+    alert('X Wins!');
     xCounter++;
     reset();
     $('#xScore').html(xCounter);
@@ -27,7 +27,7 @@ $(function(){
   }
   //cond2 x
   if (board[1][0] === 'x' && board[1][1] === 'x' && board[1][2] === 'x') {
-    alert('X Wins! O Loses!');
+    alert('X Wins!');
     xCounter++;
     reset();
     $('#xScore').html(xCounter);
@@ -35,7 +35,7 @@ $(function(){
   }
   //cond3 x
   if (board[2][0] === 'x' && board[2][1] === 'x' && board[2][2] === 'x') {
-    alert('X Wins! O Loses!');
+    alert('X Wins!');
     xCounter++;
     reset();
     $('#xScore').html(xCounter);
@@ -43,7 +43,7 @@ $(function(){
   }
   //cond4 x
   if (board[0][0] === 'x' && board[1][1] === 'x' && board[2][2] === 'x') {
-    alert('X Wins! O Loses!');
+    alert('X Wins!');
     xCounter++;
     reset();
     $('#xScore').html(xCounter);
@@ -51,7 +51,7 @@ $(function(){
   }
   //cond5 x
   if (board[2][0] === 'x' && board[1][1] === 'x' && board[0][2] === 'x') {
-    alert('X Wins! O Loses!');
+    alert('X Wins!');
     xCounter++;
     reset();
     $('#xScore').html(xCounter);
@@ -59,7 +59,7 @@ $(function(){
   }
   //cond6 x
   if (board[0][2] === 'x' && board[1][2] === 'x' && board[2][2] === 'x') {
-    alert('X Wins! O Loses!');
+    alert('X Wins!');
     xCounter++;
     reset();
     $('#xScore').html(xCounter);
@@ -67,7 +67,7 @@ $(function(){
   }
   //cond7 x
   if (board[0][1] === 'x' && board[1][1] === 'x' && board[2][1] === 'x') {
-    alert('X Wins! O Loses!');
+    alert('X Wins!');
     xCounter++;
     reset();
     $('#xScore').html(xCounter);
@@ -75,7 +75,7 @@ $(function(){
   }
   //cond8 x
   if (board[0][0] === 'x' && board[1][0] === 'x' && board[2][0] === 'x') {
-    alert('X Wins! O Loses!');
+    alert('X Wins!');
     xCounter++;
     reset();
     $('#xScore').html(xCounter);
@@ -84,56 +84,56 @@ $(function(){
 
   //cond1 o
   if (board[0][0] === 'o' && board[0][1] === 'o' && board[0][2] === 'o') {
-    alert('O Wins! X Loses!');
+    alert('O Wins!');
     oCounter++;
     reset();
     return ('#oScore').html(oCounter);
   }
   //cond2 o
   if (board[1][0] === 'o' && board[1][1] === 'o' && board[1][2] === 'o') {
-    alert('O Wins! X Loses!');
+    alert('O Wins!');
     oCounter++;
     reset();
     return $('#oScore').html(oCounter);
   }
   //cond3 o
   if (board[2][0] === 'o' && board[2][1] === 'o' && board[2][2] === 'o') {
-    alert('O Wins! X Loses!');
+    alert('O Wins!');
     oCounter++;
     reset();
     return $('#oScore').html(oCounter);
   }
   //cond4 o
   if (board[0][0] === 'o' && board[1][1] === 'o' && board[2][2] === 'o') {
-    alert('O Wins! X Loses!');
+    alert('O Wins!');
     oCounter++;
     reset();
     return $('#oScore').html(oCounter);
   }
   //cond5 o
   if (board[2][0] === 'o' && board[1][1] === 'o' && board[0][2] === 'o') {
-    alert('O Wins! X Loses!');
+    alert('O Wins!');
     oCounter++;
     reset();
     return $('#oScore').html(oCounter);
   }
   //cond6 o
   if (board[0][2] === 'o' && board[1][2] === 'o' && board[2][2] === 'o') {
-    alert('O Wins! X Loses!');
+    alert('O Wins!');
     oCounter++;
     reset();
     return $('#oScore').html(oCounter);
   }
   //cond7 o
   if (board[0][1] === 'o' && board[1][1] === 'o' && board[2][1] === 'o') {
-    alert('O Wins! X Loses!');
+    alert('O Wins!');
     oCounter++;
     reset();
     return $('#oScore').html(oCounter);
   }
   //cond8 o
   if (board[0][0] === 'o' && board[1][0] === 'o' && board[2][0] === 'o') {
-    alert('O Wins! X Loses!');
+    alert('O Wins!');
     oCounter++;
     reset();
     return $('#oScore').html(oCounter);

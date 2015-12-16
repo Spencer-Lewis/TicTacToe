@@ -61,11 +61,11 @@
   text-align: center;
 }
 .x {
-  background: url("http://www.clker.com/cliparts/c/i/R/i/U/Y/letter-x-hi.png");
+  background: url("http://lettersandnumbers.org/freealphabetletters/red/alphabet_letter_x.jpg");
   background-size: cover;
 }
 .o {
-  background: url("http://www.clker.com/cliparts/y/5/v/j/5/p/uppercase-o-hi.png");
+  background: url("http://lettersandnumbers.org/freealphabetletters/red/alphabet_letter_o.jpg");
   background-size: cover;
 }
 
@@ -92,10 +92,12 @@ header h1 {
   margin-top: 10px;
   padding: 0;
 }
-
 body {
-  background-image: url("http://tse2.mm.bing.net/th?id=OIP.Ma5c9f5042c2939243d04a9d12f0d20c8H0&pid=15.1");
-  background-size: cover;
+  background: blue;
+  background: -webkit-linear-gradient(45deg, blue, white);
+  background: -o-linear-gradient(45deg, blue, white);
+  background: -moz-linear-gradient(45deg, blue, white);
+  background: linear-gradient(45deg, blue, white);
 }
 h2 {
   margin: -15px 0 3px 0;
