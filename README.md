@@ -3,7 +3,8 @@
 -----------------
 WDI ATL Project 1
 -----------------
-bit balloon: http://waiter-chains-85876.bitballoon.com/
+Bit Balloon: http://waiter-chains-85876.bitballoon.com/
+
 Github: https://github.com/Spencer-Lewis/TicTacToe
 
 ----------------------------
@@ -63,9 +64,11 @@ To Run:
 -----------------
 Technologies Used
 -----------------
--Languages               HTML, CSS, Javascript
--Flex-box                Used to create the 3x3 grid of Divs
--Deployment              Bit Balloon: https://www.bitballoon.com/
+-Languages: HTML, CSS, Javascript
+
+-Flex-box: Used to create the 3x3 grid of Divs
+
+-Deployment: Bit Balloon: https://www.bitballoon.com/
 
 -----------------
 Planned Additions
@@ -82,6 +85,9 @@ Multiple difficulties of AI when playing against the computer toggled by buttons
 Contact:
 --------
 -Author: Spencer Lewis
+
 -Slack: Spencer-Lewis
+
 -Github: https://github.com/Spencer-Lewis
+
 -Email: Spencerlewis987@gmail.com
