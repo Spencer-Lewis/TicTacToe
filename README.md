@@ -3,7 +3,7 @@
 -----------------
 WDI ATL Project 1
 -----------------
-Bit Balloon: http://waiter-chains-85876.bitballoon.com/
+Bit Balloon: http://fund-manager-snake-85818.bitballoon.com/
 
 Github: https://github.com/Spencer-Lewis/TicTacToe
 
@@ -54,7 +54,7 @@ The AI is intended to play against the user with an intermediate skill level. Th
 To Run:
 -------
 1. The game can be accessed online:
-  - http://waiter-chains-85876.bitballoon.com/
+  - http://fund-manager-snake-85818.bitballoon.com/
 
 2. The repo for the game can also be accessed via Github.
   - https://github.com/Spencer-Lewis/TicTacToe
