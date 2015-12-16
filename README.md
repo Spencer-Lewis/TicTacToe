@@ -30,7 +30,7 @@ The game itself is Tic Tac Toe, A game where players take turns attempting to
 line up 3 X's or O's in a row in a 3x3 grid. A winner is detected as soon as 3 are lined up, and the board will automatically reset after an alert to the user clarifying the winner. The wins and ties are tallied in the head of the web page.
 
 There are two game modes included:
-  1. Two Players
+  1. Two Players:
     -In this game mode, The game starts with "O". Every click into the grid
     will then alternate placing an X or O until someone has won or the game
     has tied. If the players wish to reset the board at any time during a
@@ -39,7 +39,7 @@ There are two game modes included:
     subsequent matches. To switch to play against computer the "Play against
     Computer" button can be clicked.
 
-  2. Player vs. Computer
+  2. Player vs. Computer:
     -In this game mode, The player starts by placing an "X". The AI will then
     place an "O". From there the player will alternate turns with the AI
     until a winner is found, or the board is filled to a tie. If the player
@@ -63,14 +63,15 @@ To Run:
 -----------------
 Technologies Used
 -----------------
-Languages               HTML, CSS, Javascript
-Flex-box                Used to create the 3x3 grid of Divs
-Deployment              Bit Balloon: https://www.bitballoon.com/
+-Languages               HTML, CSS, Javascript
+-Flex-box                Used to create the 3x3 grid of Divs
+-Deployment              Bit Balloon: https://www.bitballoon.com/
 
 -----------------
 Planned Additions
 -----------------
 Multiple difficulties of AI when playing against the computer toggled by buttons:
+
   -Beginner mode: AI will always select a random available square.
 
   -Intermediate mode: AI will try to block when the player aligns two X's, will otherwise play a random available square (this is the current AI).
@@ -80,7 +81,7 @@ Multiple difficulties of AI when playing against the computer toggled by buttons
 --------
 Contact:
 --------
-Author: Spencer Lewis
-Slack: Spencer-Lewis
-Github: https://github.com/Spencer-Lewis
-Email: Spencerlewis987@gmail.com
+-Author: Spencer Lewis
+-Slack: Spencer-Lewis
+-Github: https://github.com/Spencer-Lewis
+-Email: Spencerlewis987@gmail.com
